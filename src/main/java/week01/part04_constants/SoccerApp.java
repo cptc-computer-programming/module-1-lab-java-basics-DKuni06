@@ -17,7 +17,7 @@ public class SoccerApp {
     // - Use println for each line.
     // - Call the helper methods below in the correct order.
     public static void runMatch() {
-        // Your code here
+        System.out.println(Messages.TITLE);
     }
 
     // TODO: Print EXACTLY one line using Messages.TITLE
