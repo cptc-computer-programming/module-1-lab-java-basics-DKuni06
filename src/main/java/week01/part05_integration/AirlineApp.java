@@ -3,14 +3,35 @@ package week01.part05_integration;
 
 public class AirlineApp {
 
+    
     // TODO: Write a main method that calls runCheckIn().
-
+    public static void main(String[] args) {
+        runCheckIn();
+    }
     // TODO: Implement runCheckIn() so it prints the required output EXACTLY.
     // Rules:
     // - Use println for each line.
     // - Use ONLY constants from AirlineMessages (no hardcoded strings).
     // - At least TWO steps must be done by calling methods in OTHER classes.
     public static void runCheckIn() {
-        // Your code here
+        printTitle();
+        printStart();
+        CheckInWorkflow.enterPassengerDetails();
+        CheckInWorkflow.selectSeat();
+        BoardingPass.generate();
+        printDone();
+    }
+
+    public static void printTitle() {
+        System.out.println(AirlineMessages.TITLE);
+    }
+
+    public static void printStart() {
+        System.out.println(AirlineMessages.START);
+    }
+
+    public static void printDone() {
+        System.out.println(AirlineMessages.DONE);
     }
 }
+

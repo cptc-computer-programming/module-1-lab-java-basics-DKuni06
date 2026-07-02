@@ -20,6 +20,10 @@ public class TransitApp {
     // Train departing.
     // Trip in progress.
     public static void startTrip() {
-        // Your code here
+        System.out.println("Trip Started.");
+        Station.enter();
+        Ticket.scan();
+        Train.depart();
+        System.out.println("Trip in progress.");
     }
 }

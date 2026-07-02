@@ -17,31 +17,35 @@ public class SoccerApp {
     // - Use println for each line.
     // - Call the helper methods below in the correct order.
     public static void runMatch() {
-        System.out.println(Messages.TITLE);
+        printTitle(); 
+        printKickoff();
+        printGoal();
+        printHalftime();
+        printFulltime();
     }
 
     // TODO: Print EXACTLY one line using Messages.TITLE
     public static void printTitle() {
-        // Your code here
+        System.out.println(Messages.TITLE);
     }
 
     // TODO: Print EXACTLY one line using Messages.KICKOFF
     public static void printKickoff() {
-        // Your code here
+        System.out.println(Messages.KICKOFF);
     }
 
     // TODO: Print EXACTLY one line using Messages.GOAL
     public static void printGoal() {
-        // Your code here
+        System.out.println(Messages.GOAL);
     }
 
     // TODO: Print EXACTLY one line using Messages.HALFTIME
     public static void printHalftime() {
-        // Your code here
+        System.out.println(Messages.HALFTIME);
     }
 
     // TODO: Print EXACTLY one line using Messages.FULLTIME
     public static void printFulltime() {
-        // Your code here
+        System.out.println(Messages.FULLTIME);
     }
 }
